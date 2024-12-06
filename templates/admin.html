@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Page</title>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <img src="{{ pie_chart }}" alt="Pie Chart">
+    <h2>Survey Responses</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Question 1</th>
+            <th>Question 2</th>
+            <th>Question 3</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row.id }}</td>
+            <td>{{ row.question1 }}</td>
+            <td>{{ row.question2 }}</td>
+            <td>{{ row.question3 }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

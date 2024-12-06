@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Page</title>
+</head>
+<body>
+    <h1>Survey</h1>
+    <form action="/submit" method="POST">
+        <label>1. அரசின் நலத்திட்டங்கள் உங்களுக்கு மதிப்புடனும் மரியாதையுடனும் கிடைப்பது உங்கள் உரிமையா? அல்லது நீங்கள் அதிகாரத்திற்கு தேர்ந்தெடுக்கும்  பொறுப்பாளர்களின் கருணையா?</label><br>
+        <input type="text" name="question1" required>
+        <br><br>
+
+        <label>Do you like this survey?</label>
+        <select name="question2" required>
+            <option value="select"></option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <br><br>
+
+        <label>Any feedback?</label>
+        <textarea name="question3"></textarea>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
