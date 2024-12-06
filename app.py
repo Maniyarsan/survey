@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 # SQLite database file
-DB_FILE = 'survey_data.db'
+DB_FILE = '/data/survey_data.db'
 
 # Ensure the database and table exist
 def init_db():
